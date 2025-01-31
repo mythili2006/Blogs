@@ -1,0 +1,119 @@
+/* Profile Section */
+.profile-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-pic {
+  width: 500px;
+  height: 400px;
+  border-radius: 50%;
+  border: 2px solid #83a3c6;
+  background-image: url("mythili\ wix1.jpg");
+  margin-top: 50px;
+}
+
+/* Rating & Review Section */
+.rating{
+  text-align: center;
+  margin: 20px 0;
+  color: #ffcc00
+  
+}
+
+.stars {
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  color:aquamarine
+}
+
+.star {
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.star:hover, .star.active {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+/* Emoji for Ratings */
+.star:nth-child(1)::before { content: "😡"; }
+.star:nth-child(2)::before { content: "😟"; }
+.star:nth-child(3)::before { content: "😐"; }
+.star:nth-child(4)::before { content: "😊"; }
+.star:nth-child(5)::before { content: "😍"; }
+
+
+/* Buttons */
+.logout-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #ff5733;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.logout-btn:hover {
+  background: #d43f00;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a2e;
+  color: #ffffff48;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-social-media {
+  margin-bottom: 10px;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #ffcc00;
+}
+
+.footer-bar {
+  background-color: #0f3460;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 14px;
+}
+
+h3{
+  color: #332dac;
+}
+
+marquee{
+  color: black;
+}

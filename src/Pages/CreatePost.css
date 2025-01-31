@@ -1,0 +1,104 @@
+/* General Styling */
+body {
+    background-color: #121212;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Create Post Form Container */
+#create-post-container {
+    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(255, 204, 0, 0.3);
+    text-align: center;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: 2px solid #ffcc00;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Legend */
+legend {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-transform: uppercase;
+}
+
+/* Form Inputs */
+#post-title, #post-author, #post-content {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #121212;
+    background-color: #ffffff;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+#post-content {
+    height: 100px;
+    resize: none;
+}
+
+/* Input Focus Effect */
+#post-title:focus, #post-author:focus, #post-content:focus {
+    border-color: #ffd700;
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
+}
+
+/* Submit Button */
+#submit-post {
+    background: linear-gradient(45deg, #ff5733, #ffcc00);
+    color: #121212;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 12px 20px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+#submit-post:hover {
+    background: linear-gradient(45deg, #d43f00, #d4a700);
+    transform: scale(1.05);
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    #create-post-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #post-title, #post-author, #post-content {
+        font-size: 14px;
+    }
+
+    #submit-post {
+        font-size: 16px;
+    }
+}

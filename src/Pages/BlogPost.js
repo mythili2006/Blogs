@@ -13,7 +13,7 @@ const BlogPost = () => {
         const fetchPost = async () => {
             try {
                 setLoading(true);
-                const response = await axios.get(`https://blog-app-88ee.onrender.com /post/${id}`);
+                const response = await axios.get(`https://blog-app-88ee.onrender.com/post/${id}`);
                 setPost(response.data);
                 setLoading(false);
             } catch (err) {

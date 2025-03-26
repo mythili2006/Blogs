@@ -3,7 +3,7 @@ import axios from 'axios';
 import './MyBlog.css';
 
 // Configure axios defaults
-axios.defaults.baseURL = 'https://blog-app-88ee.onrender.com ';
+axios.defaults.baseURL = 'https://blog-app-88ee.onrender.com';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 axios.defaults.headers.put['Content-Type'] = 'application/json';
 

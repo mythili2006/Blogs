@@ -14,7 +14,7 @@ const IndexPage = () => {
       try {
         setLoading(true);
         setError(null);
-        const response = await axios.get('https://blog-app-88ee.onrender.com /post');
+        const response = await axios.get('https://blog-app-88ee.onrender.com/post');
         console.log('Fetched posts:', response.data);
         setPosts(response.data);
       } catch (error) {

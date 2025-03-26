@@ -15,7 +15,7 @@ const CreatePost = () => {
         setError('');
 
         try {
-            const response = await axios.post('http://localhost:4000/createpost', { 
+            const response = await axios.post('https://blog-app-88ee.onrender.com /createpost', { 
                 title, 
                 content,
                 author

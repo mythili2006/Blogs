@@ -16,14 +16,15 @@ export default function RegisterPage() {
       },
       body: JSON.stringify({ username, password }), // Send the username and password
     });
-
+    let msg = response.json();
+    console.log(msg);
     if (response.status === 200) {
       alert('Registration successful!');
       setRedirect(true);
     } else if (response.status === 400) {
       setMessage('User already exists');
     } else {
-      setMessage('Registration failed!');
+      setMessage('Registration Success!');
     }
   }
 
